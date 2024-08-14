@@ -10,18 +10,17 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="image/web-removebg-preview.png" class="logo">
+                <img src="image/BR.png" class="logo">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Case-Study</a></li>
-                    <li><a href="#">My-Work</a></li>
-                    <li><a href="#">Content</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-text">
                 <p>Web Devloper</p>
-                <h1>Hi, i'm <span>Karan</span><br>Rohilla From India</h1>
+                <h1>Hi, I'm <span>Karan</span></h1>
             </div>
         </div>
     </div>
@@ -68,36 +67,10 @@
             </div>
         </div>
     </div>  
-    <!------------Case-Study------------------>
-    <div id="Case-Study">
+    <!---------------Projects-------------------->
+    <div id="Projects">
         <div class="container">
-            <h1 class="sub-titel">Case-Study</h1>
-            <div class="project-list">
-                <div>
-                    <i class="fa-solid fa-building-columns"></i>
-                    <h2>Bank Management System</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sed esse reiciendis qui aliquid natus, officiis maxime. Corporis soluta rem, reiciendis, dolores, repellat fugit modi corrupti id nisi tempore autem.</p>
-                    <a href="#">Learn More</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-chess"></i>
-                    <h2>Chess Bot</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sed esse reiciendis qui aliquid natus, officiis maxime. Corporis soluta rem, reiciendis, dolores, repellat fugit modi corrupti id nisi tempore autem.</p>
-                    <a href="#">Learn More</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-google"></i>
-                    <h2>Google Gemini Clone</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sed esse reiciendis qui aliquid natus, officiis maxime. Corporis soluta rem, reiciendis, dolores, repellat fugit modi corrupti id nisi tempore autem.</p>
-                    <a href="#">Learn More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!---------------My-Work-------------------->
-    <div id="My-Work">
-        <div class="container">
-            <h1 class="sub-titel">My Work</h1>
+            <h1 class="sub-titel">Projects</h1>
             <div class="Work-List">
                 <div class="Work">
                     <img src="image/banking-saving-money-management-account-concept_53876-124787.avif">
@@ -141,10 +114,10 @@
                         <a href=""><i class="fa-brands fa-linkedin"></i></a>
                         <a href=""><i class="fa-brands fa-hackerrank"></i></a>
                     </div>
-                    <a href="image/WEB DEVELOPER (1).pdf" download class="Btn Btn2">Download CV</a>
+                    <a href="image/karan cv1 (1).pdf" download class="Btn Btn2">Download CV</a>
                 </div>
                 <div class="Contact-right">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="Email" placeholder="Your Email" required>
                         <textarea name="message" rows="6" placeholder="Your Message"></textarea>
@@ -154,9 +127,20 @@
             </div>
         </div>
         <div class="copyright">
-            <p>copyright</p>
+            <p>@copyright</p>
         </div>
     </div>
     <script src="/script.js"></script> 
+    <script>
+        const scriptURL = '<https://script.google.com/macros/s/AKfycbxQqiiBVv57en8AZdaGQTZV36YxGkESaMUWsRbX2XKMqKScjgmQoJB6lj0oxYyDYJTc5g/exec>'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
 </html>

@@ -11,3 +11,4 @@ var tablinks = document.getElementsByClassName("tab-links");
             event.currentTarget.classList.add("active-links");
             document.getElementById(tabname).classList.add("active-tab")
         }
+        
