@@ -1,146 +1,154 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css"><script src="https://kit.fontawesome.com/8f747cc65b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <!---box icons link---->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!---remix icons link--->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet">
+    <!---google fonts link--->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="image/BR.png" class="logo">
-                <ul>
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#Projects">Projects</a></li>
-                    <li><a href="#Contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-text">
-                <p>Web Devloper</p>
-                <h1>Hi, I'm <span>Karan</span></h1>
+    <!---header--->
+    <header>
+        <a href="#" class="logo">Portfo<span>lio.</span></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navlist">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="top-btnn">
+            <a href="#" class="h-btn">Contact me</a>
+        </div>
+    </header>
+
+    <!---hero--->
+    <section class="hero" id="home">
+        <div class="main-content">
+            <h4>Hi, There!</h4>
+            <h1>I'm <span>Karan Rohilla</span></h1>
+            <p>I graduated with a B-Tech in Computer Science Engineering in 2023, and have since gained one year of valuable real-world experience. Currently,I am learning my own to enhance my skills.</p>
+            <div class="social">
+                <a href="#"><i class="ri-instagram-line"></i></a>
+                <a href="#"><i class="ri-linkedin-box-fill"></i></a>
+                <a href="#"><i class="ri-github-fill"></i></a>
+            </div>
+            <div class="main-btn">
+                <a href="#" class="btn">Hire me</a>
+                <a href="#" class="btn btn2">Download CV</a>
             </div>
         </div>
-    </div>
-    <!-- -----------About----------- -->
-    <div id="About">
-        <div class="container">
-            <div class="row">
-                <div class="About-col-1">
-                    <img src="image/PhotoGrid_Plus_1632316934886.jpg">
-                </div>
-                <div class="About-col-2">
-                    <h1 class="sub-titel">About Me</h1>
-                    <p>I graduated with a B-Tech in Computer Science Engineering in 2023, and have since gained one year of valuable real-world experience. Currently,I am learning my own to enhance my skills. <br>
-                        Soft-Skills <br>
-                        1. Prefer To Work With The Team <br>
-                        2. Practical And Fact-Minded <br>
-                        3. Patient And Reliable <br>
-                        4. Dedicated And Storang-Willed</p>
-                    <div class="tab-title">
-                        <p class="tab-links active-links"onclick="opentab('Skills')">Skills</p>
-                        <p class="tab-links"onclick="opentab('Exprience')">Exprience</p>
-                        <p class="tab-links"onclick="opentab('Education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="Skills">
-                        <ul>
-                            <li><span>Web Devloper</span><br>Designing WebSite</li>
-                            <li><span>front-end Devloper </span><br>Web Applications</li>
-                            <li><span>Back-end Devloper</span><br>working on server-side software</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="Exprience">
-                        <ul>
-                            <li><span>IONSOFT Solution</span><br>Management Trainee As Web Developer<br>JUN 2023-DEC 2023</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="Education">
-                        <ul>
-                            <li><span>KCC Institute of Technology And Management,Noida(UP)</span><br>Completed B-Tech in  Computer Science And Engineering With 6.76 CGPA</li>
-                            <li><span>Dayanand Public School,Bikaner</span><br>High school Degree CBSE Board<br>2019 In The Field Of PCM with 5 CGPA</li>
-                            <li><span>Dayanand Public School,Bikaner</span><br>Intermediate Degree CBSE Board<br>2016 With 6.4 CGPA</li>
-                        </ul>
-                    </div>
-                </div>
+    </section>
+
+    <!---about--->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="image/kr.png" alt="">
+        </div>
+        <div class="about-text">
+            <h2>I am Web <span>Developer</span></h2>
+            <div class="exp-area">
+                <p class="exp">
+                    Experience:
+                    <span>6 months</span>
+                </p>
+                <p class="exp">
+                    Specialty:
+                    <span>Web Developer</span>
+                </p>
+                <p class="exp">
+                    Address:
+                    <span>Imperial Court Tower 3, Noida</span>
+                </p>
+                <p class="exp">
+                    Email:
+                    <span>Rohillakaran02@gmail.com</span>
+                </p>
+                <p class="exp">
+                    Phone:
+                    <span>+91-8875160622</span>
+                </p>
+                <p class="exp">
+                    Freelance:
+                    <span>Available</span>
+                </p>
             </div>
+            <a href="#" class="btn">View All Projects</a>
         </div>
-    </div>  
-    <!---------------Projects-------------------->
-    <div id="Projects">
-        <div class="container">
-            <h1 class="sub-titel">Projects</h1>
-            <div class="Work-List">
-                <div class="Work">
-                    <img src="image/banking-saving-money-management-account-concept_53876-124787.avif">
-                    <div class="layer">
-                        <h3>Bank Management System</h3>
-                        <p>Talking about the features of the Bank Management System, a user can create an account by providing the name of the account holder, account number, select amount type whether its Saving account or Current account and providing an initial amount.</p>
-                        <a href=""> <i><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
-                    </div>
-                </div>
-                <div class="Work">
-                    <img src="image/assortment-chess-pieces-with-dramatic-scenery_23-2150829079.avif">
-                    <div class="layer">
-                        <h3>Chess Bot</h3>
-                        <p>A neural network is a type of machine learning model that is inspired by the structure and function of the human brain. It is composed of layers of interconnected "neurons," which process and transmit information. Neural networks are used for a variety of tasks, such as image and speech recognition, natural language processing, and decision making. They are trained using large amounts</p>
-                        <a href=""><i><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
-                    </div>
-                </div>
-                <div class="Work">
-                    <img src="image/1download.png">
-                    <div class="layer">
-                        <h3>Google Gemini Clone</h3>
-                        <p>Google Gemini, formerly known as Bard, is a multimodal large language AI model developed by Google. It is designed to assist in various tasks such as writing, planning, and learning. Gemini can process and generate content in multiple formats, enhancing its usability compared to traditional chatbots.</p>
-                        <a href=""><i><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
-                    </div>
-                </div>
-            </div>
-            <a href="#" class="Btn">See More</a>
+    </section>
+
+    <!---portfolio--->
+    <section class="portfolio" id="portfolio">
+        <div class="center-text">
+            <h2>My <span>Portfolio</span></h2>
         </div>
-    </div>
-    <!-- -------------contact------------>
-    <div id="Contact">
-        <div class="container">
-            <div class="row">
-                <div class="Contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p<i class="fa-solid fa-paper-plane"></i> rohillakaran02@gmail.com</p>
-                    <p<i class="fa-solid fa-phone"></i> +91-8875160622</p>
-                    <div class="social-icons">
-                        <a href=""><i class="fa-brands fa-facebook"></i></a>
-                        <a href=""><i class="fa-brands fa-instagram"></i></a>
-                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                        <a href=""><i class="fa-brands fa-hackerrank"></i></a>
+            <div class="portfolio-content">
+                <div class="row">
+                    <img src="/image/p1.jpeg" alt="">
+                    <div class="main-row">
+                        <div class="row-text">
+                            <h5>WebSite Design</h5>
+                        </div>
+                        <div class="row-icon">
+                            <i class="ri-github-fill"></i>
+                        </div>
                     </div>
-                    <a href="image/karan cv1 (1).pdf" download class="Btn Btn2">Download CV</a>
+                    <h4>WebSite Development for Black Star Studios</h4>
                 </div>
-                <div class="Contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="Btn Btn2">Submit</button>
-                    </form>
+                <div class="row">
+                    <img src="/image/p2.jpeg" alt="">
+                    <div class="main-row">
+                        <div class="row-text">
+                            <h5>WebSite Design</h5>
+                        </div>
+                        <div class="row-icon">
+                            <i class="ri-github-fill"></i>
+                        </div>
+                    </div>
+                    <h4>WebSite Development for Achieving My Best Life</h4>
                 </div>
-            </div>
+                <div class="row">
+                    <img src="/image/p3.jpeg" alt="">
+                    <div class="main-row">
+                        <div class="row-text">
+                            <h5>WebSite Design</h5>
+                        </div>
+                        <div class="row-icon">
+                            <i class="ri-github-fill"></i>
+                        </div>
+                    </div>
+                    <h4>WebSite Development for Lime Foundation</h4>
+                </div>
+                <div class="row">
+                    <img src="/image/p4.jpeg" alt="">
+                    <div class="main-row">
+                        <div class="row-text">
+                            <h5>WebSite Design</h5>
+                        </div>
+                        <div class="row-icon">
+                            <i class="ri-github-fill"></i>
+                        </div>
+                    </div>
+                    <h4>WebSite Development for Mining Impact Specialists LTD</h4>
+                </div>
         </div>
-        <div class="copyright">
-            <p>@copyright</p>
-        </div>
-    </div>
-    <script src="/script.js"></script> 
-    <script>
-        const scriptURL = '<https://script.google.com/macros/s/AKfycbxQqiiBVv57en8AZdaGQTZV36YxGkESaMUWsRbX2XKMqKScjgmQoJB6lj0oxYyDYJTc5g/exec>'
-        const form = document.forms['submit-to-google-sheet']
-      
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => console.log('Success!', response))
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
+    </section>
+    
+    <!---js link--->
+    <script src="script.js"></script>
+
 </body>
 </html>
