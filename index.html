@@ -15,15 +15,18 @@
     rel="stylesheet">
     <!---google fonts link--->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
 </head>
 <body>
+
     <!---header--->
     <header>
         <a href="#" class="logo">Portfo<span>lio.</span></a>
-        <div class="bx bx-menu" id="menu-icon"></div>
+        <div class="ri-menu-line" id="menu-icon"></div>
         <ul class="navlist">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -37,7 +40,7 @@
 
     <!---hero--->
     <section class="hero" id="home">
-        <div class="main-content">
+        <div class="main-content" data-aos="fade-in">
             <h4>Hi, There!</h4>
             <h1>I'm <span>Karan Rohilla</span></h1>
             <p>I graduated with a B-Tech in Computer Science Engineering in 2023, and have since gained one year of valuable real-world experience. Currently,I am learning my own to enhance my skills.</p>
@@ -55,10 +58,10 @@
 
     <!---about--->
     <section class="about" id="about">
-        <div class="about-img">
+        <div class="about-img" data-aos="zoom-in-down">
             <img src="image/kr.png" alt="">
         </div>
-        <div class="about-text">
+        <div class="about-text" data-aos="zoom-in-up">
             <h2>I am Web <span>Developer</span></h2>
             <div class="exp-area">
                 <p class="exp">
@@ -92,10 +95,10 @@
 
     <!---portfolio--->
     <section class="portfolio" id="portfolio">
-        <div class="center-text">
+        <div class="center-text" data-aos="fade-down">
             <h2>My <span>Portfolio</span></h2>
         </div>
-            <div class="portfolio-content">
+            <div class="portfolio-content" data-aos="zoom-in-up">
                 <div class="row">
                     <img src="/image/p1.jpeg" alt="">
                     <div class="main-row">
@@ -146,9 +149,42 @@
                 </div>
         </div>
     </section>
+
+    <!---Contact--->
+    <section class="contact" id="contact">
+        <div class="center-text" data-aos="fade-down">
+            <h2>Contact <span>Me</span></h2>
+        </div>
+        <div class="contact-form" data-aos="zoom-in">
+            <form action="">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Email Address.." required>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Write Message Here...." required></textarea>
+                <input type="submit" name="" value="Send Message" class="send-btn">
+            </form>
+        </div>
+    </section>
+
+    <!---Footer--->
+    <div class="footer">
+        <div class="copyright">
+            <p>2024 Karan Rohilla, All Rights Reserved.</p>
+        </div>
+        <a href="#home" class="scroll-top">
+            <i class="ri-arrow-up-s-fill"></i>
+        </a>
+    </div>
     
     <!---js link--->
     <script src="script.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 1400,
+      });
+    </script>
 
 </body>
 </html>
